@@ -15,10 +15,10 @@ public class MyApp : Gtk.Application {
         var main_window = new Gtk.ApplicationWindow (this) {
             default_height = 300,
             default_width = 300,
-            title = "Hello Again"
+            title = _("Hello Again")
         };
 
-        var label = new Gtk.Label ("Hello Again World!");
+        var label = new Gtk.Label (_("Hello Again World!"));
 
         main_window.add (label);
         main_window.show_all ();
